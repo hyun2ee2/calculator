@@ -22,5 +22,11 @@ public class Main {
         // 사용자로 부터 연산자 입력 받기
         System.out.print("연산자를 입력해주세요 : ");
         String inputOperator = operator.nextLine();
+
+        // 조건문 (만약에 사용자로 부터 입력 받은 연산자가 "+" 이면 numberOne값과 numberTwo값을 더해서 출력)
+        if(inputOperator.equals("+")) {
+            int sum = numberOne + numberTwo;
+            System.out.println("결과 값 : " + sum);
+        }
     }
 }
