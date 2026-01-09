@@ -26,11 +26,21 @@ public class Main {
         // 조건문 (만약에 사용자로 부터 입력 받은 연산자가 "+" 이면 numberOne값과 numberTwo값을 더해서 출력)
         if(inputOperator.equals("+")) {
             int sum = numberOne + numberTwo;
+
             System.out.println("결과 값 : " + sum);
             // else-if (만약에 사용자로 부터 입력 받은 연산자가 "-" 이면 numberOne값과 numberTwo값을 빼서 출력)
         } else if(inputOperator.equals("-")) {
-            int sub = numberOne - numberTwo;
-            System.out.println("결과 값 : " + sub);
+            int subtract = numberOne - numberTwo;
+
+            System.out.println("결과 값 : " + subtract);
+            // else-if (만약에 사용자로 부터 입력 받은 연산자가 "/" 이면 numberOne값과 numberTwo값을 나눈 값 출력)
+        } else if(inputOperator.equals("/")) {
+            // 몫과 나머지를 더해서 0.5를 뺀 값을 result에 저장
+            int divide = numberOne / numberTwo;
+            int remain = numberOne % numberTwo;
+            int result = divide + remain;
+
+            System.out.println("결과 값 : " + (result - 0.5));
         }
     }
 }
