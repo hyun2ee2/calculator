@@ -27,6 +27,10 @@ public class Main {
         if(inputOperator.equals("+")) {
             int sum = numberOne + numberTwo;
             System.out.println("결과 값 : " + sum);
+            // else-if (만약에 사용자로 부터 입력 받은 연산자가 "-" 이면 numberOne값과 numberTwo값을 빼서 출력)
+        } else if(inputOperator.equals("-")) {
+            int sub = numberOne - numberTwo;
+            System.out.println("결과 값 : " + sub);
         }
     }
 }
