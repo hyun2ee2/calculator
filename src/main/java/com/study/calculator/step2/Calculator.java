@@ -1,6 +1,12 @@
 package com.study.calculator.step2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+
 public class Calculator {
+
+    ArrayList<Double> calculationResult = new ArrayList<Double>();
 
     double result = 0;
     public double calculator(double numberOne, double numberTwo, String operator) {
@@ -18,6 +24,8 @@ public class Calculator {
 
             // 만약에 operator가 "*"일 경우 result값에 numberOne * numberTwo를 진행 후 대입
             case "*":
+            case "x":
+            case "X":
                 result = numberOne * numberTwo;
                 break;
 
